@@ -7,7 +7,7 @@
 	<name>spring_default</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
-<properties>
+    <properties>
         <java-version>1.7</java-version>
         <org.springframework-version>3.2.4.RELEASE</org.springframework-version>
         <org.aspectj-version>1.7.3</org.aspectj-version>
@@ -154,8 +154,8 @@
             <artifactId>ojdbc14</artifactId>
             <version>10.2.0.4.0</version>
         </dependency>
-		-->
-		
+ 		-->
+ 
         <!-- AspectJ -->
         <dependency>
             <groupId>org.aspectj</groupId>
@@ -201,8 +201,25 @@
             <artifactId>jsr250-api</artifactId>
             <version>1.0</version>
         </dependency>
+        
+        <!-- Logging (LogBack용) -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${org.slf4j-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>jcl-over-slf4j</artifactId>
+			<version>${org.slf4j-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.1.3</version>
+		</dependency>
              
-        <!-- Logging -->
+        <!-- Logging 
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
@@ -228,6 +245,7 @@
             <artifactId>log4jdbc-remix</artifactId>
             <version>0.2.7</version>
         </dependency>
+        -->
          
         <!-- MappingJacksonJsonView -->
         <dependency>
