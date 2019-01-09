@@ -117,7 +117,7 @@
             <version>5.1.31</version>
         </dependency>
          
-        <!-- Oracle
+        <!-- Oracle 커밋 테스트
         <dependency>
             <groupId>com.oracle</groupId>
             <artifactId>ojdbc14</artifactId>
