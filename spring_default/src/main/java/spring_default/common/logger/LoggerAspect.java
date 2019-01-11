@@ -4,6 +4,8 @@ import org.aspectj.lang.ProceedingJoinPoint;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import spring_default.common.exception.AnnotationExceptionHandler;
+
 public class LoggerAspect {
 	protected static final Logger logger = LoggerFactory.getLogger(LoggerAspect.class);
 	

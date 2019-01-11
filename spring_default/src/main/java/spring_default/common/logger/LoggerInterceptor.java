@@ -8,9 +8,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
+
+//HandlerInterceptorAdapter
 public class LoggerInterceptor extends HandlerInterceptorAdapter {
 	protected static final Logger logger = LoggerFactory.getLogger(LoggerInterceptor.class);
-     
+	
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 		if(logger.isDebugEnabled()) {

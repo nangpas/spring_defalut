@@ -4,7 +4,7 @@
 	<property name="LOG_HOME" value="C:/dev/logs" />
 	<property name="LOG_PATTERN" value="[%d{yyyy-MM-dd HH:mm:ss}][%p]: %c - %m%n" />
 	<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>${LOG_HOME}/nlsslt.log</file>
+		<file>${LOG_HOME}/com.nangpas.log</file>
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 			<fileNamePattern>${LOG_HOME}/spring_default_%d{yyyyMMdd}.log</fileNamePattern>
 			<maxHistory>30</maxHistory>
@@ -22,7 +22,7 @@
 	</appender>
 	
 	<!-- Application Loggers -->
-	<logger name="spring_default" level="DEBUG">
+	<logger name="com.nangpas" level="DEBUG">
 		<appender-ref ref="CONSOLE" />
 		<appender-ref ref="FILE" />
 	</logger>
